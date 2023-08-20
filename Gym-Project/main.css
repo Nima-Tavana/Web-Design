@@ -1,0 +1,264 @@
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url(./images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-heading {
+    animation-name: anim;
+    animation-duration: 2s;
+}
+
+.banner-par {
+    animation-name: animate;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes anim {
+    0% {
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+/* navbar */
+.nav-menu {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+    padding: 30px;
+    transition: all 0.7s;
+}
+
+.custom-navbar {
+    padding: 5px 30px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+}
+
+
+.row-text {
+    padding: 0% 20%;
+}
+
+.my-cnt {
+    padding-top: 4%;
+}
+
+.my-img {
+    animation-name: anim2;
+    animation-duration: 2s;
+}
+
+.fromLeft {
+    animation-name: fromLeft;
+    animation-duration: 3s;
+}
+
+.fromRight {
+    animation-name: fromRight;
+    animation-duration: 3s;
+}
+
+.fromBootom {
+    animation-name: fromBootom;
+    animation-duration: 3s;
+}
+
+@keyframes fromLeft {
+    0% {
+        opacity: 0;
+        transform: translate(-120px);
+    }
+
+    100% {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fromRight {
+    0% {
+        opacity: 0;
+        transform: translate(120px);
+    }
+
+    100% {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fromBootom {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.heading {
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+    font-size: 25px;
+    background-color: rgb(14, 69, 105);
+}
+
+.my-p3 {
+    padding: 0% 25%;
+}
+
+.im {
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.discount {
+    border: 1px;
+    border-radius: 20px;
+}
+
+.discount:hover {
+    padding: 10px;
+    transition: 0.5s;
+    color: blue;
+}
+
+.cardtxt:hover {
+    font-weight: bolder;
+}
+
+
+.fromLeft2 {
+    animation-name: fromLeft;
+    animation-duration: 3s;
+}
+
+.fromRight2 {
+    animation-name: fromRight;
+    animation-duration: 3s;
+}
+
+.fromBootom2 {
+    animation-name: fromBootom;
+    animation-duration: 3s;
+}
+
+@keyframes fromLeft2 {
+    0% {
+        opacity: 0;
+        transform: translate(-120px);
+    }
+
+    100% {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fromRight2 {
+    0% {
+        opacity: 0;
+        transform: translate(120px);
+    }
+
+    100% {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fromBootom2 {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.contact {
+    background: linear-gradient(105deg, rgba(21, 31, 32, .8) 0%, rgba(21, 31, 32, .9) 50%, transparent 50%), url(./images/contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.input {
+    background: transparent;
+    border: none;
+    border-color: transparent;
+    border-radius: 0px;
+    color: #000;
+    border-bottom: 2px solid #ccc;
+    transition: all .8s;
+}
+
+.input:focus {
+    background: transparent;
+    border: none;
+    border-color: transparent;
+    box-shadow: none;
+    border-bottom: 2px solid #f5593d;
+}
+
+.submit-button {
+    background-color: #2980b9;
+    color: #eee;
+    transition: all .3s;
+}
+
+.submit-button:hover {
+    background-color: #3498db;
+    transform: translateY(-3px);
+}
+
+.label {
+    color: #777;
+    display: block;
+    font-size: 13px;
+    margin-top: -70px;
+    margin-right: 4px;
+    transition: all .4s;
+}
+
+.input:placeholder-shown+.label {
+    transform: translate(20px, 20px);
+    opacity: 0;
+    visibility: hidden;
+}
